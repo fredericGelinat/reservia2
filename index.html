@@ -23,19 +23,21 @@
   </head>
 
   <body>
+    <header>
+      <img class="logo" src="images/logo/Reservia.svg" alt="logoreservia" />
+      <nav id="navigation">
+        <ul>
+          <li class="hebergements">
+            <a href="#hebergements">Hébergements</a>
+          </li>
+          <li class="activites"><a href="#Activites">Activités</a></li>
+          <li class="inscription"><a href="#">S'inscrire</a></li>
+        </ul>
+      </nav>
+    </header>
+
     <main>
-      <header>
-        <img class="logo" src="images/logo/Reservia.svg" alt="logoreservia" />
-        <nav id="navigation">
-          <ul>
-            <li class="hebergements">
-              <a href="#hebergements">Hébergements</a>
-            </li>
-            <li class="activites"><a href="#Activites">Activités</a></li>
-            <li class="inscription"><a href="#">S'inscrire</a></li>
-          </ul>
-        </nav>
-      </header>
+    
 
       <div class="titres">
         <h1 class="titre-1">
@@ -96,9 +98,9 @@
         </div>
       </div>
       <section id="hotels">
-        <!--display: flex-->
+    
         <div class="section-A">
-          <!--div?-->
+          
           <!--Section gauche Hebergement-->
 
           <h2 class="titre-3" id="hebergements">Hébergements à Marseille</h2>
@@ -113,7 +115,7 @@
               <div class="description-hotel">
                 <h5>Auberge la Cannebière</h5>
                 <p>Nuit à partir de <strong>25 €</strong></p>
-                <!--div?-->
+              
                 <div class="etoile">
                   <span class="etoile-active fas fa-star"></span>
                   <span class="etoile-active fas fa-star"></span>
@@ -123,7 +125,7 @@
                 </div>
               </div>
             </a>
-            <!--regler les marges et decoupage photo-->
+           
             <a class="image-2" href="#">
               <img
                 src="images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
@@ -145,7 +147,6 @@
 
             <a class="image-3" href="#">
               <img
-                sizes="15vw"
                 src="images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg"
                 alt="image3"
               />
@@ -162,7 +163,7 @@
               </div>
             </a>
 
-            <!--regler les marges et decoupage photo-->
+          
 
             <a class="image-4" href="#">
               <img
@@ -202,7 +203,7 @@
                 </div>
               </div>
             </a>
-            <!--regler les marges et decoupage photo-->
+            
             <a class="image-6" href="#">
               <img
                 src="images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
@@ -222,7 +223,7 @@
             </a>
           </section>
 
-          <h3>Afficher plus</h3>
+        <a href="#"class="afficher-plus" >Afficher plus</a>
         </div>
         <!--Section droite populaire-->
         <aside class="section-B" id="populaire">
@@ -309,8 +310,8 @@
           </article>
         </aside>
       </section>
-      <!---troisième bloc: Activités à Marseille-->
-     <!-- <section class="section-C" id="activites">
+      <!--troisième bloc: Activités à Marseille
+      <section class="section-C" id="activites">
         <h2 class="titre-3">Activités à Marseille</h2>
 
         <div id="images-activites">
@@ -381,8 +382,8 @@
           </aside>
         </div>
       </section>
-      <!--footer-->
-     <!-- <footer>
+      </main>
+       <footer>
         <div class="a-propos">
           <h4>A propos</h4>
 
@@ -411,6 +412,6 @@
           </div>
         </div>
       </footer>-->
-    </main>
+    
   </body>
 </html>
