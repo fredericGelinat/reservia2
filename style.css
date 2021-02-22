@@ -8,9 +8,10 @@ body {
   font-family: "raleway", sans-serif;
   margin: 0;
   overflow-x: hidden;
-
 }
-/*main : margin auto */
+main {
+  margin: 20px;
+}
 a {
   text-decoration: none;
   color: black;
@@ -28,15 +29,13 @@ header {
   justify-content: space-between;
   list-style-type: none;
   width: 100%;
-  margin:0;
+  margin: 0;
 }
 
 nav {
   display: flex;
   width: 40%;
 }
-
-
 
 nav ul li {
   flex: 1 1 auto;
@@ -53,7 +52,7 @@ nav ul li {
 .inscription a {
   color: #0065fc;
 }
-.hebergements a {
+#hebergements a {
   color: #0065fc;
   border-top: 2px solid #0065f2;
   padding-top: 2em;
@@ -63,12 +62,13 @@ nav ul li {
 
 /* LOGO */
 .logo {
-  margin-left: 0%;
+  margin-left: 1%;
 }
+/* titres */
 .titres {
   display: flex;
   flex-direction: column;
-} /* faire pareil* pour les trois autres blocs ' avant hebergements mùarseille */
+}
 
 .titre-1 {
   font-size: 21px;
@@ -139,6 +139,8 @@ form {
 }
 .f a {
   padding: 22px;
+  opacity: 1;
+  cursor: pointer;
 }
 /*.fas {
   width: 20px;
@@ -153,11 +155,14 @@ form {
   justify-content: center;
   color: #0065fc;
   font-size: x-small;
-  width: 20px;
+  width: 29px;
   background-color: #deebff;
-  border-radius: 45px;
-  padding: 9px;
-  transform: scale(2.3, 1.5);
+  border-radius: 14px;
+  padding: 5px;
+  transform: scale(1.3, 1.8);
+  height: 20px;
+  display: flex;
+  align-items: center;
 }
 .align-responsive {
   display: flex;
@@ -169,10 +174,6 @@ form {
   margin-bottom: auto;
 }
 .info {
-  /*width: 23px;
-  border-radius: 15px;
-  border: 1px gray solid;
-  height: max-content;*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -180,15 +181,17 @@ form {
 }
 #info-A {
   color: #0065fc;
-  border-radius: 15px;
+  border-radius: 14px;
   border: 1px gray solid;
-  padding: 10px;
+  padding: 7px;
+  width: 29px;
+  display: flex;
+  justify-content: center;
 }
 
 /* hotels + HEBERGEMENTS */
 #hotels {
   display: flex;
-
 }
 /* hebergements */
 .six-images {
@@ -199,6 +202,7 @@ form {
   height: 110px;
   width: 100%;
   border-radius: 22px 22px 0 0;
+  object-fit: cover;
 }
 .section-A h3 {
   margin-left: 6%;
@@ -220,7 +224,7 @@ form {
   border-radius: 20px;
   padding: 5px;
 }
-.afficher-plus{
+.afficher-plus {
   margin-left: 50px;
   font-weight: bold;
 }
@@ -246,8 +250,9 @@ form {
   width: 100%;
 }
 .trois-images img {
-  width: 100px;
+  width: 37%;
   border-radius: 22px 0 0 22px;
+  object-fit: cover;
 }
 .etoile-active {
   color: #0065fc;
@@ -272,10 +277,10 @@ form {
   padding: 5px;
 }
 .description-hotel {
-  padding: 5px;
+  padding: 11px;
 }
 .description-hotel h5 {
-  font-size: 14px;
+  font-size: 15px;
   margin: 0;
 }
 .description-hotel p {
@@ -290,72 +295,108 @@ form {
 }
 /* activites */
 .section-C img {
-  width: 87%;
-  background-color: #fff;
+  width: 90%;
   border-radius: 20px 20px 0 0;
 }
 #images-activites {
   display: flex;
-  box: shadow 2px #b9b8b8;
-}
-.image-1 img {
-  display: flex;
-  flex-direction: column;
+  justify-content: space-evenly;
 }
 
+.vieux-port img {
+  height: 29em;
+  object-fit: cover;
+}
+.fort-pom img {
+  height: 14em;
+  object-fit: cover;
+}
+.frioul img {
+  height: 11.5em;
+  object-fit: cover;
+}
+.calanques img {
+  height: 29em;
+  object-fit: cover;
+}
+
+.longchamp img {
+  height: 11.5em;
+  object-fit: cover;
+}
+.la-garde img {
+  height: 14em;
+  object-fit: cover;
+}
+#picture-1,
+#colonne-1,
+#picture-2,
+#colonne-2 {
+  width: 25%;
+}
 /*      MEDIA QUERIES                             */
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (max-width: 374px) {
+  main {
+    margin: 0;
+  }
+  /* HEADER   -------------------------------------------------------*/
   header {
     width: 100%;
   }
   nav {
     width: 100%;
   }
-  #navigation ul {
-    padding: 0;
+  nav ul li {
+    flex-direction: column;
+    justify-content: flex-end;
     display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    align-items: flex-end;
   }
 
-  .inscription {
-    left: 8em;
-    top: 1em;
-  }
-
-  #navigation ul li {
-    width: 100%;
-    display: flex;
-    flex: 1 0 50%;
-  }
-
-  .hebergements a {
+  #hebergements a {
     color: #0065fc;
     border-bottom: 2px solid #0065f2;
     border-top: none;
     padding-bottom: 0.5em;
-    width: 100%;
+    width: 61%;
+    display: flex;
+    justify-content: FLEX-END;
   }
 
   .inscription a {
     color: #0065fc;
     font-weight: bold;
+    margin: 0 0 1em 15em;
+    position: absolute;
+    top: 18px;
+    right: 27px;
   }
 
-  .activites a {
-    color: #0b0c0e;
-    border-bottom: 2px solid #c0c6ce;
-    padding-bottom: 0.5em;
+  .position-responsive {
     display: flex;
-    justify-content: center;
   }
-  /* titres */
+  /* titres -------------------------------------*/
+  .titres {
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+  }
   .titre-2 {
     font-size: 14.8px;
     margin-top: 2%;
   }
-  /* search */
+  .titre-3 {
+    width: max-content;
+    margin: -5px 0 35px 19px;
+    font-size: larger;
+  }
+
+  /* search ------------------------------------------*/
+  .map-marker {
+    width: 4%;
+    height: 3em;
+    border-radius: 10px 0 0 10px;
+    background-color: #f2f2f2;
+  }
   .champ-city {
     width: auto;
     font-weight: bold;
@@ -364,15 +405,19 @@ form {
   }
 
   .map-marker {
-    width: inherit;
     height: 3em;
     border-radius: 10px 0 0 10px;
     background-color: #f2f2f2;
+    min-width: 17%;
   }
   .champ-search {
-    width: 10em;
+    width: 6.5em;
   }
-  /* filtres */
+  form {
+    display: flex;
+    margin: 8px;
+  }
+  /* filtres ------------------------------*/
   #filtres {
     display: flex;
     width: auto;
@@ -381,16 +426,11 @@ form {
   }
   .align-responsive {
     display: flex;
-    /*flex-wrap: wrap;*/
-    margin: 0px 0px 23px -48px;
+    flex-wrap: wrap;
+    margin: 0px 0px 23px -46px;
   }
-  /* INFO */
+  /* INFO -------------------------------------*/
 
-  .info {
-    width: 12%;
-    border-radius: 15px;
-    border: 1px gray solid;
-  }
   #info-A {
     color: #0065fc;
     font-size: 18px;
@@ -409,23 +449,331 @@ form {
     margin: auto;
     padding-top: 4%;
   }
-
+  /* HEBERGEMENT + POPULAIRE = hotels------------------------*/
   #hotels {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+
+  /*hebergements------------------------------------------------*/
+
+  .six-images {
     display: flex;
     flex-direction: column;
   }
+  .six-images a {
+    width: 18.5rem;
+    margin-left: 2px;
+    margin-bottom: 50px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 2px 10px 25px 0px #b9b4b4;
+  }
+  /*.image-1,
+  .image-2,
+  .image-3,
+  .image-4,
+  .image-5,
+  .image-6 {
+    width: 500em;
+  }*/
+  .section-A {
+    background-color: white;
+    margin: auto;
+  }
+  
+  .afficher-plus {
+    font-weight: bold;
+    margin: -16px 0 42px 6px;
+  }
+  /* populaires-----------------------------------------------------*/
+  .section-B {
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px;
+    width: auto;
+    box-shadow: 2px 10px 25px 0px #f2f2f2;
+  }
+  .etoile-2 {
+    font-size: x-small;
+    padding-top: 26px;
+  }
+  /* activités -------------------------------------------------------*/
+  #images-activites {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  #images-activites p {
+    font-weight: bold;
+    margin-left: 5%;
+  }
+  #activite {
+    display: flex;
+    flex-direction: column;
+    margin: 0 27px 18px 0;
+  }
 
+  .section-C a {
+    width: 100%;
+  }
+  .section-C img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+  }
+  #picture-1,
+  #colonne-1,
+  #picture-2,
+  #colonne-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 15px;
+  }
+  .vieux-port,
+  .fort-pom,
+  .frioul,
+  .calanques,
+  .longchamp,
+  .la-garde {
+    background-color: rgb(248, 246, 246);
+    border-radius: 20px;
+    box-shadow: 2px 6px 15px -2px #7c7a7a;
+  }
 
-
-
-
-
-
-
+  .vieux-port img,
+  .fort-pom img,
+  .frioul img,
+  .calanques img,
+  .longchamp img,
+  .la-garde img {
+    height: 10em;
+    object-fit: cover;
+  }
 }
-/* hotels hebergements+ POPULAIRE */
-/*#hotels {
-  display: flex;
-  height: 96em;
-  flex-direction: column-reverse;
-}*/
+/*--------------- iphone8 ----------------*/
+@media screen (min-width: 375px) and (max-width: 764px) {
+  main {
+    margin: 0;
+  }
+  /* HEADER   -------------------------------------------------------*/
+  header {
+    width: 100%;
+  }
+  nav {
+    width: 100%;
+  }
+  nav ul li {
+    flex-direction: column;
+    justify-content: flex-end;
+    display: flex;
+  }
+
+  #hebergements a {
+    color: #0065fc;
+    border-bottom: 2px solid #0065f2;
+    border-top: none;
+    padding-bottom: 0.5em;
+    width: 61%;
+    display: flex;
+    justify-content: FLEX-END;
+  }
+
+  .inscription a {
+    color: #0065fc;
+    font-weight: bold;
+    margin: 0 0 1em 15em;
+    position: absolute;
+    top: 18px;
+    right: 27px;
+  }
+
+  .position-responsive {
+    display: flex;
+  }
+  /* titres -------------------------------------*/
+  .titres {
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+  }
+  .titre-2 {
+    font-size: 14.8px;
+    margin-top: 2%;
+  }
+  .titre-3 {
+    width: max-content;
+    margin: -5px 0 35px 19px;
+    font-size: larger;
+  }
+
+  /* search ------------------------------------------*/
+  .map-marker {
+    width: 4%;
+    height: 3em;
+    border-radius: 10px 0 0 10px;
+    background-color: #f2f2f2;
+  }
+  .champ-city {
+    width: auto;
+    font-weight: bold;
+    padding-left: 1%;
+    border: 2px solid #f2f2f2f2;
+  }
+
+  .map-marker {
+    height: 3em;
+    border-radius: 10px 0 0 10px;
+    background-color: #f2f2f2;
+    min-width: 17%;
+  }
+  .champ-search {
+    width: 6.5em;
+  }
+  form {
+    display: flex;
+    margin: 8px;
+  }
+  /* filtres ------------------------------*/
+  #filtres {
+    display: flex;
+    width: auto;
+    flex-wrap: wrap;
+    margin-left: 10%;
+  }
+  .align-responsive {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 0px 23px -46px;
+  }
+  /* INFO -------------------------------------*/
+
+  #info-A {
+    color: #0065fc;
+    font-size: 18px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-top: 18%;
+  }
+  .info-B p {
+    font-size: small;
+  }
+
+  #filtres h5 {
+    font-size: inherit;
+    width: 19em;
+    margin: auto;
+    padding-top: 4%;
+  }
+  /* HEBERGEMENT + POPULAIRE = hotels------------------------*/
+  #hotels {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+
+  /*hebergements------------------------------------------------*/
+
+  .six-images {
+    display: flex;
+    flex-direction: column;
+  }
+  .six-images a {
+    width: 18.5rem;
+    margin-left: 2px;
+    margin-bottom: 50px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 2px 10px 25px 0px #b9b4b4;
+  }
+  /*.image-1,
+  .image-2,
+  .image-3,
+  .image-4,
+  .image-5,
+  .image-6 {
+    width: 500em;
+  }*/
+  .section-A {
+    background-color: white;
+    margin: auto;
+  }
+  .section-A a{
+    width: 100%;
+  }
+  .afficher-plus {
+    font-weight: bold;
+    margin: -16px 0 42px 6px;
+  }
+  /* populaires-----------------------------------------------------*/
+  .section-B {
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px;
+    width: auto;
+    box-shadow: 2px 10px 25px 0px #f2f2f2;
+  }
+  .etoile-2 {
+    font-size: x-small;
+    padding-top: 26px;
+  }
+  /* activités -------------------------------------------------------*/
+  #images-activites {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  #images-activites p {
+    font-weight: bold;
+    margin-left: 5%;
+  }
+  #activite {
+    display: flex;
+    flex-direction: column;
+    margin: 0 27px 18px 0;
+  }
+
+  .section-C a {
+    width: 100%;
+  }
+  .section-C img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+  }
+  #picture-1,
+  #colonne-1,
+  #picture-2,
+  #colonne-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 15px;
+  }
+  .vieux-port,
+  .fort-pom,
+  .frioul,
+  .calanques,
+  .longchamp,
+  .la-garde {
+    background-color: rgb(248, 246, 246);
+    border-radius: 20px;
+    box-shadow: 2px 6px 15px -2px #7c7a7a;
+  }
+
+  .vieux-port img,
+  .fort-pom img,
+  .frioul img,
+  .calanques img,
+  .longchamp img,
+  .la-garde img {
+    height: 10em;
+    object-fit: cover;
+  }
+}
+
