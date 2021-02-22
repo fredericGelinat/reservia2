@@ -321,11 +321,11 @@ form {
 }
 
 .longchamp img {
-  height: 11.5em;
+  height: 14.5em;
   object-fit: cover;
 }
 .la-garde img {
-  height: 14em;
+  height: 11em;
   object-fit: cover;
 }
 #picture-1,
@@ -333,6 +333,33 @@ form {
 #picture-2,
 #colonne-2 {
   width: 25%;
+}
+/*--------FOOTER--------------------------------*/
+.all-footer {
+  margin: 1%;
+  display: flex;
+}
+.footer-1 a {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 6px 0;
+}
+.footer-2 a {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 6px 0;
+}
+.footer-3 a {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 6px 0;
+}
+
+.heberger {
+  margin-left: 25%;
+}
+.assistance {
+  margin-left: 22%;
 }
 /*      MEDIA QUERIES                             */
 @media screen and (max-width: 764px) {
@@ -370,7 +397,10 @@ form {
     top: 18px;
     right: 27px;
   }
-
+  #activites a {
+    color: black;
+    border-bottom: 2px solid grey;
+  }
   .position-responsive {
     display: flex;
   }
@@ -398,7 +428,7 @@ form {
     background-color: #f2f2f2;
   }
   .champ-city {
-    width: auto;
+    width: 64%;
     font-weight: bold;
     padding-left: 1%;
     border: 2px solid #f2f2f2f2;
@@ -411,11 +441,20 @@ form {
     min-width: 17%;
   }
   .champ-search {
-    width: 6.5em;
+    display: none;
   }
   form {
     display: flex;
     margin: 8px;
+  }
+  #loupe {
+    display: flex;
+    align-items: center;
+    background-color: #0065fc;
+    width: 17%;
+    border-radius: 0 9px 9px 0;
+    justify-content: center;
+    color: white;
   }
   /* filtres ------------------------------*/
   #filtres {
@@ -460,7 +499,6 @@ form {
 
   .six-images {
     display: flex;
-    
   }
   .six-images a {
     width: 100%;
@@ -565,15 +603,136 @@ form {
     display: flex;
     flex-direction: column;
     margin: 0 0 6px 0;
+  }
+  .footer-2 a {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 6px 0;
+  }
+  .footer-3 a {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 6px 0;
+  }
+  .assistance,
+  .heberger {
+    margin-left: 1%;
+  }
 }
-.footer-2 a {
+@media screen and (min-width: 765px) and (max-width: 991px) {
+  /*--------------NAVIGAYION---------------*/
+  nav {
+    display: flex;
+    width: 65%;
+  }
+
+  /*-----------------FILTRES--------*/
+  .f a {
+    padding: 17px;
+  }
+  /*-----------------hebergements-------------*/
+  .six-images a {
+    width: 33%;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  /*-----------------populaires-----------*/
+  .section-B a {
+    display: flex;
+    background-color: white;
+    margin: 20px;
+    border-radius: 20px;
+    padding: 5px;
+    flex-direction: column;
+    height: 16em;
+  }
+  .trois-images img {
+    width: 100%;
+    border-radius: 22px 22px 0 0;
+    object-fit: cover;
+    height: 126px;
+  }
+  .etoile-2 {
+    font-size: x-small;
+    margin-top: -25px;
+  }
+  .description-hotel h5 {
+    font-size: 14px;
+    margin: 0;
+  }
+  .lespluspopulaires {
+    margin: 3% 0 3% 16%;
+  }
+  .align i {
+    padding: 9%;
+  }
+  #activite {
+    margin: 0 -23px 0 0;
+  }
+  /*---------------------footer------------------*/
+  .footer-1 a,
+  .footer-2 a,
+  .footer-3 a {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0 16px 0;
+  }
+  .heberger h4 {
+    margin-right: -19px;
+  }
+  .assistance {
+    margin-left: 7%;
+  }
+  .all-footer {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+@media screen and (min-width: 992px){
+  /*----------navigation----------*/
+  nav {
+    display: flex;
+    width: 51%;
+}
+/*------------hebergements----------*/
+.six-images a {
+  margin-bottom: 50px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 5px;
   display: flex;
   flex-direction: column;
-  margin: 0 0 6px 0;
+  justify-content: space-evenly;
 }
-.footer-3 a {
+/*------------populaires------------*/
+.section-B a {
+  background-color: white;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
-  margin: 0 0 6px 0;
+  height: 9em;
 }
+.trois-images img {
+  width: 100%;
+  border-radius: 22px 22px 0 0px;
+  object-fit: cover;
+  height: 3em;
+}
+.etoile-2 {
+  font-size: x-small;
+  margin-top: -42px;
+}
+.description-hotel p {
+  font-size: small;
+  margin-top: 1%;
+}
+
+
 }
