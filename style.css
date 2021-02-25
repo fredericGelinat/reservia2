@@ -192,6 +192,7 @@ form {
 /* hotels + HEBERGEMENTS */
 #hotels {
   display: flex;
+  margin: 1% 0% 1% 0%;
 }
 /* hebergements */
 .six-images {
@@ -223,10 +224,12 @@ form {
   background-color: #fff;
   border-radius: 20px;
   padding: 5px;
+  box-shadow: 2px 10px 25px 0px #b9b4b4;
 }
 .afficher-plus {
   margin-left: 50px;
   font-weight: bold;
+  font-size: x-large;
 }
 .etoile {
   font-size: x-small;
@@ -248,12 +251,14 @@ form {
   display: flex;
   flex-direction: column;
   width: 100%;
+  height: 48em;
 }
 .trois-images img {
   width: 37%;
   border-radius: 22px 0 0 22px;
   object-fit: cover;
 }
+
 .etoile-active {
   color: #0065fc;
 }
@@ -275,6 +280,7 @@ form {
   border-radius: 20px;
   height: 140px;
   padding: 5px;
+  box-shadow: 2px 10px 25px 0px #b9b4b4;
 }
 .description-hotel {
   padding: 11px;
@@ -294,6 +300,9 @@ form {
   padding-top: 34px;
 }
 /* activites */
+.section-C {
+  margin: 1px -45px 1px 1px;
+}
 .section-C img {
   width: 90%;
   border-radius: 20px 20px 0 0;
@@ -302,32 +311,105 @@ form {
   display: flex;
   justify-content: space-evenly;
 }
-
+.vieux-port {
+  background-color: white;
+  margin-right: 14%;
+  padding-bottom: 4%;
+  border-radius: 22px;
+  box-shadow: 2px 10px 25px 0px #b9b4b4;
+}
 .vieux-port img {
-  height: 29em;
+  height: 34.5em;
   object-fit: cover;
+  width: 100%;
+}
+.vieux-port p {
+  padding-left: 4%;
+  font-weight: bold;
+}
+.fort-pom {
+  background-color: white;
+  margin-right: 14%;
+  padding-bottom: 4%;
+  border-radius: 22px;
+  box-shadow: 2px 10px 25px 0px #b9b4b4;
 }
 .fort-pom img {
-  height: 14em;
+  height: 15em;
   object-fit: cover;
+  width: 100%;
+}
+.fort-pom p {
+  padding-left: 4%;
+  font-weight: bold;
+}
+.frioul {
+  background-color: white;
+  margin-right: 14%;
+  margin-top: 7%;
+  padding-bottom: 4%;
+  border-radius: 22px;
+  box-shadow: 2px 10px 25px 0px #b9b4b4;
 }
 .frioul img {
-  height: 11.5em;
+  height: 14em;
   object-fit: cover;
+  width: 100%;
+}
+.frioul p {
+  padding-left: 4%;
+  font-weight: bold;
+}
+.calanques {
+  background-color: white;
+  margin-right: 14%;
+  padding-bottom: 4%;
+  border-radius: 22px;
+  box-shadow: 2px 10px 25px 0px #b9b4b4;
 }
 .calanques img {
-  height: 29em;
+  height: 34.5em;
   object-fit: cover;
+  width: 100%;
 }
-
+.calanques p {
+  padding-left: 4%;
+  font-weight: bold;
+}
+.longchamp {
+  background-color: white;
+  margin-right: 14%;
+  margin-top: 7%;
+  padding-bottom: 4%;
+  border-radius: 22px;
+  box-shadow: 2px 10px 25px 0px #b9b4b4;
+}
 .longchamp img {
-  height: 14.5em;
+  height: 15em;
   object-fit: cover;
+  width: 100%;
+}
+.longchamp p {
+  padding-left: 4%;
+  font-weight: bold;
+}
+.la-garde {
+  background-color: white;
+  margin-right: 14%;
+  padding-bottom: 4%;
+  border-radius: 22px;
+  box-shadow: 2px 10px 25px 0px #b9b4b4;
 }
 .la-garde img {
-  height: 11em;
+  height: 14em;
   object-fit: cover;
+  width: 100%;
 }
+.la-garde p {
+  padding-left: 4%;
+  font-weight: bold;
+}
+
 #picture-1,
 #colonne-1,
 #picture-2,
@@ -336,7 +418,7 @@ form {
 }
 /*--------FOOTER--------------------------------*/
 .all-footer {
-  margin: 1%;
+  margin: 4% 0 0 3%;
   display: flex;
 }
 .footer-1 a {
@@ -362,6 +444,17 @@ form {
   margin-left: 22%;
 }
 /*      MEDIA QUERIES                             */
+@media screen and (max-width: 240px)
+{
+  .inscription a {
+    color: #0065fc;
+    font-weight: bold;
+    margin: 0 0 1em 15em;
+    position: absolute;
+    top: 18px;
+    right: -5px;
+}
+}
 @media screen and (max-width: 764px) {
   main {
     margin: 0;
@@ -509,23 +602,17 @@ form {
     padding: 5px;
     box-shadow: 2px 10px 25px 0px #b9b4b4;
   }
-  /*.image-1,
-  .image-2,
-  .image-3,
-  .image-4,
-  .image-5,
-  .image-6 {
-    width: 500em;
-  }*/
+  
   .section-A {
     background-color: white;
-    margin: auto;
-  }
+    margin: 0 2% 0 auto;
+}
 
-  .afficher-plus {
-    font-weight: bold;
-    margin: -16px 0 42px 6px;
-  }
+.afficher-plus {
+  font-weight: bold;
+  margin: 0 0 14% 6%;
+  font-size: initial;
+}
   /* populaires-----------------------------------------------------*/
   .section-B {
     background-color: #f2f2f2;
@@ -538,6 +625,12 @@ form {
   .etoile-2 {
     font-size: x-small;
     padding-top: 26px;
+  }
+  .trois-images {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 34em;
   }
   /* activités -------------------------------------------------------*/
   #images-activites {
@@ -580,6 +673,7 @@ form {
     background-color: rgb(248, 246, 246);
     border-radius: 20px;
     box-shadow: 2px 6px 15px -2px #7c7a7a;
+    margin: 1% 0 6% auto;
   }
 
   .vieux-port img,
@@ -643,6 +737,11 @@ form {
     flex-wrap: wrap;
     justify-content: space-between;
   }
+  .afficher-plus {
+    margin-left: 50px;
+    font-weight: bold;
+    font-size: larger;
+}
   /*-----------------populaires-----------*/
   .section-B a {
     display: flex;
@@ -653,6 +752,12 @@ form {
     flex-direction: column;
     height: 16em;
   }
+  .trois-images {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 56em;
+}
   .trois-images img {
     width: 100%;
     border-radius: 22px 22px 0 0;
@@ -673,9 +778,20 @@ form {
   .align i {
     padding: 9%;
   }
+  /*--------------ACTIVITES---------*/
   #activite {
     margin: 0 -23px 0 0;
   }
+  .frioul img {
+    height: 15em;
+    object-fit: cover;
+    width: 100%;
+}
+.calanques img {
+  height: 33.5em;
+  object-fit: cover;
+  width: 100%;
+}
   /*---------------------footer------------------*/
   .footer-1 a,
   .footer-2 a,
@@ -693,46 +809,138 @@ form {
   .all-footer {
     display: flex;
     justify-content: space-evenly;
-  }
+    margin: 0 3% 0 1%;
 }
-@media screen and (min-width: 992px){
+}
+@media screen and (min-width: 992px) {
   /*----------navigation----------*/
   nav {
     display: flex;
     width: 51%;
+  }
+  /*------------hebergements----------*/
+  .six-images {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .six-images a {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    height: 17em;
+    width: 39%;
 }
-/*------------hebergements----------*/
-.six-images a {
-  margin-bottom: 50px;
-  background-color: #fff;
-  border-radius: 20px;
-  padding: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  .six-images img {
+    height: 11em;
+    border-radius: 22px 22px 0 0;
+    object-fit: cover;
+  }
+  .afficher-plus {
+    margin-left: 50px;
+    font-weight: bold;
+    font-size: larger;
 }
-/*------------populaires------------*/
-.section-B a {
-  background-color: white;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  height: 9em;
+  /*------------populaires------------*/
+  .section-B a {
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 18em;
 }
-.trois-images img {
-  width: 100%;
-  border-radius: 22px 22px 0 0px;
+  .trois-images img {
+    width: 100%;
+    border-radius: 22px 22px 0 0px;
+    object-fit: cover;
+    height: 10em;
+  }
+  .etoile-2 {
+    font-size: x-small;
+    margin-top: -42px;
+  }
+  .description-hotel p {
+    font-size: small;
+    margin-top: 1%;
+  }
+  /*-------------ACTIVITES------------*/
+  .longchamp img {
+    height: 16em;
+    object-fit: cover;
+    width: 100%;
+}
+.calanques p {
+  padding-left: 4%;
+  font-weight: bold;
+  
+}
+.frioul img {
+  height: 12em;
   object-fit: cover;
-  height: 3em;
+  width: 100%;
 }
-.etoile-2 {
-  font-size: x-small;
-  margin-top: -42px;
+.fort-pom img {
+  height: 18em;
+  object-fit: cover;
+  width: 100%;
 }
-.description-hotel p {
+.section-C p{
   font-size: small;
-  margin-top: 1%;
+}
+}
+@media screen and (min-width: 1280px){
+  /*------------activites----------*/
+  .frioul img {
+    height: 11.5em;
+    object-fit: cover;
+    width: 100%;
+}
+.longchamp img {
+  height: 15.5em;
+  object-fit: cover;
+  width: 100%;
 }
 
+}
+@media screen and (min-width: 1440px){
+  /*------------activites----------*/
+  .longchamp img {
+    height: 15em;
+    object-fit: cover;
+    width: 100%;
+}
+.frioul img {
+  height: 11em;
+  object-fit: cover;
+  width: 100%;
+}
+}
+@media screen and (min-width: 1920px) {
+  #hotels {
+    display: flex;
+    margin: 1% 2% 1% 0%;
+  }
 
+  /*------------activites--------------*/
+  .frioul img {
+    height: 10.5em;
+    object-fit: cover;
+    width: 100%;
+  }
+  .longchamp img {
+    height: 14.5em;
+    object-fit: cover;
+    width: 100%;
+  }
+ 
+  .section-C {
+    margin: 1px -32px 1px 1px;
+  }
+
+  /*---------------footer-------------*/
+  .all-footer {
+    margin: 4% 0 0 1%;
+    display: flex;
+  }
 }
