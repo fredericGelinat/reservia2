@@ -117,6 +117,7 @@ form {
   border-radius: 0 10px 10px 0;
   border: 2px solid #0065fc;
 }
+/*-------------filtres-------------------*/
 #filtres {
   display: flex;
 }
@@ -142,13 +143,9 @@ form {
   opacity: 1;
   cursor: pointer;
 }
-/*.fas {
-  width: 20px;
-  background-color: #deebff;
-  border-radius: 45px;
-  padding: 9px;
-  transform: scale(2.3, 1.5);
-}*/
+.survol:hover{
+  background-color: #0065fc;
+}
 .icone i {
   font-weight: bold;
   display: flex;
@@ -778,6 +775,12 @@ form {
   .align i {
     padding: 9%;
   }
+  .image-7  p{
+    font-size: 75%;
+  }
+  .image-9 p{
+    font-size: 75%;
+  }
   /*--------------ACTIVITES---------*/
   #activite {
     margin: 0 -23px 0 0;
@@ -830,7 +833,7 @@ form {
     display: flex;
     flex-direction: column;
     height: 17em;
-    width: 39%;
+    width: 44%;
 }
   .six-images img {
     height: 11em;
@@ -901,7 +904,15 @@ form {
   object-fit: cover;
   width: 100%;
 }
-
+.six-images a {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  height: 17em;
+  width: 41%;
+}
 }
 @media screen and (min-width: 1440px){
   /*------------activites----------*/
@@ -921,7 +932,15 @@ form {
     display: flex;
     margin: 1% 2% 1% 0%;
   }
-
+  .six-images a {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    height: 17em;
+    width: 44%;
+}
   /*------------activites--------------*/
   .frioul img {
     height: 10.5em;
