@@ -143,7 +143,7 @@ form {
   opacity: 1;
   cursor: pointer;
 }
-.survol:hover {
+a:hover {
   background-color: #0065fc;
 }
 .icone i {
@@ -493,12 +493,11 @@ form {
   #activites a {
     color: black;
     border-bottom: 2px solid #e3d9d9;
-    width: 13em;
     padding: 5% 0% 5% 26%;
   }
   .position-responsive {
     margin-top: 5%;
-    width: 10em;
+    width: 50%;
   }
   /* titres -------------------------------------*/
   .titres {
@@ -509,6 +508,7 @@ form {
   .titre-2 {
     font-size: 14.8px;
     margin-top: 2%;
+    font-weight: lighter;
   }
   .titre-3 {
     width: max-content;
