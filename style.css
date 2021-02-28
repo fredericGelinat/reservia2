@@ -143,7 +143,7 @@ form {
   opacity: 1;
   cursor: pointer;
 }
-.survol:hover{
+.survol:hover {
   background-color: #0065fc;
 }
 .icone i {
@@ -169,19 +169,21 @@ form {
 #point-info {
   display: flex;
   margin-bottom: auto;
+  margin-left: 5%;
+  width: 80%;
 }
 .info {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-right: 2%;
+  font-size: 10px;
 }
 #info-A {
   color: #0065fc;
-  border-radius: 14px;
+  border-radius: 100%;
   border: 1px gray solid;
   padding: 7px;
-  width: 29px;
   display: flex;
   justify-content: center;
 }
@@ -415,7 +417,7 @@ form {
 }
 /*--------FOOTER--------------------------------*/
 .all-footer {
-  margin: 4% 0 0 3%;
+  margin: 4% 0;
   display: flex;
 }
 .footer-1 a {
@@ -441,18 +443,9 @@ form {
   margin-left: 22%;
 }
 /*      MEDIA QUERIES                             */
-@media screen and (max-width: 240px)
-{
-  .inscription a {
-    color: #0065fc;
-    font-weight: bold;
-    margin: 0 0 1em 15em;
-    position: absolute;
-    top: 18px;
-    right: -5px;
-}
-}
-@media screen and (max-width: 764px) {
+
+
+@media screen  and (max-width: 764px) {
   main {
     margin: 0;
   }
@@ -468,15 +461,25 @@ form {
     justify-content: flex-end;
     display: flex;
   }
-
+  #navigation ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #navigation .activites li {
+    width: 50%;
+  }
   #hebergements a {
     color: #0065fc;
     border-bottom: 2px solid #0065f2;
     border-top: none;
-    padding-bottom: 0.5em;
-    width: 61%;
+    padding: 0.5em 5em 0.5em 8em;
     display: flex;
-    justify-content: FLEX-END;
+    justify-content: flex-end;
   }
 
   .inscription a {
@@ -489,10 +492,13 @@ form {
   }
   #activites a {
     color: black;
-    border-bottom: 2px solid grey;
+    border-bottom: 2px solid #e3d9d9;
+    width: 13em;
+    padding: 5% 0% 5% 26%;
   }
   .position-responsive {
-    display: flex;
+    margin-top: 5%;
+    width: 10em;
   }
   /* titres -------------------------------------*/
   .titres {
@@ -548,25 +554,37 @@ form {
   }
   /* filtres ------------------------------*/
   #filtres {
-    display: flex;
+    display: block;
     width: auto;
     flex-wrap: wrap;
-    margin-left: 10%;
+    margin-top: 3%;
   }
   .align-responsive {
     display: flex;
     flex-wrap: wrap;
-    margin: 0px 0px 23px -46px;
+    margin-left: -0.5em;
   }
   /* INFO -------------------------------------*/
-
+  .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3%;
+    font-size: 10px;
+    margin-top: -11px;
+  }
   #info-A {
     color: #0065fc;
-    font-size: 18px;
+    font-size: 10px;
     position: relative;
     display: flex;
     justify-content: center;
     padding-top: 18%;
+  }
+  #point-info {
+    display: flex;
+    width: 80%;
+    margin: 7% 0 5% 5%;
   }
   .info-B p {
     font-size: small;
@@ -574,9 +592,7 @@ form {
 
   #filtres h5 {
     font-size: inherit;
-    width: 19em;
-    margin: auto;
-    padding-top: 4%;
+    margin: 5% 0 0 5%;
   }
   /* HEBERGEMENT + POPULAIRE = hotels------------------------*/
   #hotels {
@@ -592,24 +608,23 @@ form {
   }
   .six-images a {
     width: 100%;
-    margin-left: 2px;
-    margin-bottom: 50px;
     background-color: #fff;
     border-radius: 20px;
     padding: 5px;
     box-shadow: 2px 10px 25px 0px #b9b4b4;
+    margin: 5% 2% 5% 5%;
   }
-  
+
   .section-A {
     background-color: white;
     margin: 0 2% 0 auto;
-}
+  }
 
-.afficher-plus {
-  font-weight: bold;
-  margin: 0 0 14% 6%;
-  font-size: initial;
-}
+  .afficher-plus {
+    font-weight: bold;
+    margin: 0 0 14% 6%;
+    font-size: initial;
+  }
   /* populaires-----------------------------------------------------*/
   .section-B {
     background-color: #f2f2f2;
@@ -618,6 +633,15 @@ form {
     border-radius: 0px;
     width: auto;
     box-shadow: 2px 10px 25px 0px #f2f2f2;
+  }
+  .section-B a {
+    display: flex;
+    background-color: white;
+    margin: 20px;
+    border-radius: 20px;
+    height: 140px;
+    padding: 5px;
+    box-shadow: none;
   }
   .etoile-2 {
     font-size: x-small;
@@ -686,9 +710,10 @@ form {
   /* ------------footer--------*/
 
   .all-footer {
-    margin: 6%;
     display: flex;
     flex-direction: column;
+    background-color: #f2f2f2;
+    margin: 0;
   }
   .footer-1 a {
     display: flex;
@@ -705,6 +730,7 @@ form {
     flex-direction: column;
     margin: 0 0 6px 0;
   }
+  .a-propos,
   .assistance,
   .heberger {
     margin-left: 1%;
@@ -721,6 +747,13 @@ form {
   .f a {
     padding: 17px;
   }
+  /*------------point-info----------------*/
+  #point-info {
+    display: flex;
+    margin-bottom: auto;
+    margin-left: 0;
+    width: 80%;
+  }
   /*-----------------hebergements-------------*/
   .six-images a {
     width: 33%;
@@ -735,10 +768,10 @@ form {
     justify-content: space-between;
   }
   .afficher-plus {
-    margin-left: 50px;
+    margin: 5% 12%;
     font-weight: bold;
     font-size: larger;
-}
+  }
   /*-----------------populaires-----------*/
   .section-B a {
     display: flex;
@@ -754,7 +787,7 @@ form {
     flex-direction: column;
     width: 100%;
     height: 56em;
-}
+  }
   .trois-images img {
     width: 100%;
     border-radius: 22px 22px 0 0;
@@ -775,10 +808,10 @@ form {
   .align i {
     padding: 9%;
   }
-  .image-7  p{
+  .image-7 p {
     font-size: 75%;
   }
-  .image-9 p{
+  .image-9 p {
     font-size: 75%;
   }
   /*--------------ACTIVITES---------*/
@@ -789,12 +822,12 @@ form {
     height: 15em;
     object-fit: cover;
     width: 100%;
-}
-.calanques img {
-  height: 33.5em;
-  object-fit: cover;
-  width: 100%;
-}
+  }
+  .calanques img {
+    height: 33.5em;
+    object-fit: cover;
+    width: 100%;
+  }
   /*---------------------footer------------------*/
   .footer-1 a,
   .footer-2 a,
@@ -807,19 +840,32 @@ form {
     margin-right: -19px;
   }
   .assistance {
-    margin-left: 7%;
+    margin-left: 1%;
+  }
+  .heberger {
+    margin-left: 17%;
+  }
+  .a-propos{
+    margin: 0;
   }
   .all-footer {
     display: flex;
     justify-content: space-evenly;
-    margin: 0 3% 0 1%;
-}
+    margin: 0;
+    background-color: #f2f2f2;
+  }
 }
 @media screen and (min-width: 992px) {
   /*----------navigation----------*/
   nav {
     display: flex;
     width: 51%;
+  }
+  /*------------point-info------*/
+  #point-info {
+    display: flex;
+    margin-bottom: auto;
+    margin-left: 0;
   }
   /*------------hebergements----------*/
   .six-images {
@@ -833,18 +879,18 @@ form {
     display: flex;
     flex-direction: column;
     height: 17em;
-    width: 44%;
-}
+    width: 39%;
+  }
   .six-images img {
     height: 11em;
     border-radius: 22px 22px 0 0;
     object-fit: cover;
   }
   .afficher-plus {
-    margin-left: 50px;
+    margin: -1% 0 3% 4%;
     font-weight: bold;
     font-size: larger;
-}
+  }
   /*------------populaires------------*/
   .section-B a {
     background-color: white;
@@ -852,7 +898,7 @@ form {
     display: flex;
     flex-direction: column;
     height: 18em;
-}
+  }
   .trois-images img {
     width: 100%;
     border-radius: 22px 22px 0 0px;
@@ -872,62 +918,105 @@ form {
     height: 16em;
     object-fit: cover;
     width: 100%;
+  }
+  .calanques p {
+    padding-left: 4%;
+    font-weight: bold;
+  }
+  .frioul img {
+    height: 12em;
+    object-fit: cover;
+    width: 100%;
+  }
+  .fort-pom img {
+    height: 18em;
+    object-fit: cover;
+    width: 100%;
+  }
+  .section-C p {
+    font-size: small;
+  }
+  /*--------------FOOTER-------------*/
+  .all-footer {
+    display: flex;
+    background-color: #f2f2f2;
+    margin: 4% 0 0 0;
 }
-.calanques p {
-  padding-left: 4%;
-  font-weight: bold;
-  
+  .a-propos {
+    margin-left: 1%;
+  }
+  .footer-1 a {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 10px 0;
 }
-.frioul img {
-  height: 12em;
-  object-fit: cover;
-  width: 100%;
+.footer-2 a{
+  margin: 0 0 10px 0;
+
 }
-.fort-pom img {
-  height: 18em;
-  object-fit: cover;
-  width: 100%;
+.footer-3 a{
+  margin: 0 0 10px 0;
 }
-.section-C p{
-  font-size: small;
-}
-}
-@media screen and (min-width: 1280px){
+@media screen and (min-width: 1280px) {
+  /*------------POINT-INFO----------*/
+  #point-info {
+    display: flex;
+    margin-bottom: auto;
+    margin-left: 0%;
+    width: 80%;
+  }
   /*------------activites----------*/
   .frioul img {
     height: 11.5em;
     object-fit: cover;
     width: 100%;
+  }
+  .longchamp img {
+    height: 15.5em;
+    object-fit: cover;
+    width: 100%;
+  }
+  .six-images a {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    height: 17em;
+    width: 41%;
+  }
+  /*--------------footer---------------*/
+  .all-footer {
+    margin: 4% 0 0 0%;
+    display: flex;
+    background-color: #f2f2f2;
+  }
+  .a-propos {
+    margin-left: 1%;
+  }
 }
-.longchamp img {
-  height: 15.5em;
-  object-fit: cover;
-  width: 100%;
-}
-.six-images a {
-  background-color: #fff;
-  border-radius: 20px;
-  padding: 5px;
-  display: flex;
-  flex-direction: column;
-  height: 17em;
-  width: 41%;
-}
-}
-@media screen and (min-width: 1440px){
+@media screen and (min-width: 1440px) {
   /*------------activites----------*/
   .longchamp img {
     height: 15em;
     object-fit: cover;
     width: 100%;
-}
-.frioul img {
-  height: 11em;
-  object-fit: cover;
-  width: 100%;
-}
+  }
+  .frioul img {
+    height: 11em;
+    object-fit: cover;
+    width: 100%;
+  }
 }
 @media screen and (min-width: 1920px) {
+  /*----------point-info-----------*/
+  #point-info {
+    display: flex;
+    margin-bottom: auto;
+    margin-left: 0%;
+    width: 80%;
+  }
+  /*-------------hebergements + Populaires------*/
   #hotels {
     display: flex;
     margin: 1% 2% 1% 0%;
@@ -940,7 +1029,7 @@ form {
     flex-direction: column;
     height: 17em;
     width: 44%;
-}
+  }
   /*------------activites--------------*/
   .frioul img {
     height: 10.5em;
@@ -952,14 +1041,18 @@ form {
     object-fit: cover;
     width: 100%;
   }
- 
+
   .section-C {
     margin: 1px -32px 1px 1px;
   }
 
   /*---------------footer-------------*/
   .all-footer {
-    margin: 4% 0 0 1%;
+    margin: 4% 0 0 0%;
     display: flex;
+    background-color: #f2f2f2;
+  }
+  .a-propos {
+    margin-left: 1%;
   }
 }
