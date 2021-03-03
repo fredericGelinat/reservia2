@@ -143,9 +143,17 @@ form {
   opacity: 1;
   cursor: pointer;
 }
-a:hover {
+
+.survol:hover {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  border-radius: 20px 20px 20px 20px;
   background-color: #0065fc;
+  color: white;
 }
+
+
 .icone i {
   font-weight: bold;
   display: flex;
@@ -182,7 +190,7 @@ a:hover {
 #info-A {
   color: #0065fc;
   border-radius: 100%;
-  border: 1px gray solid;
+  border: 1px #cac7c7 solid;
   padding: 7px;
   display: flex;
   justify-content: center;
@@ -480,6 +488,7 @@ a:hover {
     padding: 0.5em 5em 0.5em 8em;
     display: flex;
     justify-content: flex-end;
+    width: 100%;
   }
 
   .inscription a {
@@ -563,6 +572,14 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     margin-left: -0.5em;
+  }
+  .survol:hover {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    border-radius: 20px 20px 20px 20px;
+    background-color: #0065fc;
+    color: white;
   }
   /* INFO -------------------------------------*/
   .info {
