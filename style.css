@@ -115,7 +115,7 @@ form {
   background-color: #0065fc;
   color: white;
   border-radius: 0 10px 10px 0;
-  border: 2px solid #0065fc;
+  border: 2px solid #0a65ec;
 }
 /*-------------filtres-------------------*/
 #filtres {
@@ -1072,4 +1072,5 @@ form {
   .a-propos {
     margin-left: 1%;
   }
+}
 }
