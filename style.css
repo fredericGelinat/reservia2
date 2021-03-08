@@ -581,6 +581,14 @@ form {
     background-color: #0065fc;
     color: white;
   }
+  .survol:hover {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    border-radius: 20px 20px 20px 20px;
+    background-color: #0065fc;
+    color: white;
+  }
   /* INFO -------------------------------------*/
   .info {
     display: flex;
