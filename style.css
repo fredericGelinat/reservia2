@@ -907,13 +907,14 @@ form {
     margin-left: 17%;
   }
   .a-propos {
-    margin: 0;
-  }
+    margin: 0 -30px;
+}
   .all-footer {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin: 0;
     background-color: #f2f2f2;
+    
   }
 }
 @media screen and (min-width: 992px) {
@@ -1250,6 +1251,7 @@ form {
     .survol {
       font-weight: bolder;
       font-size: larger;
+      white-space: nowrap;
     }
     #familial {
       width: auto;
