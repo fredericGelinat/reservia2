@@ -1334,6 +1334,11 @@ form {
       object-fit: cover;
       width: 100%;
     }
+    .la-garde img {
+      height: 12em;
+      object-fit: cover;
+      width: 100%;
+  }
     .section-C {
       margin: 1px -32px 1px 1px;
     }
