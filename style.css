@@ -5,12 +5,13 @@
 }
 
 body {
-  font-family: "raleway", sans-serif;
+  font-family: "Raleway", sans-serif;
   margin: 0;
   overflow-x: hidden;
+  font-size: 1em;
 }
 main {
-  margin: 20px;
+  margin: 3% 3% 0 3%;
 }
 a {
   text-decoration: none;
@@ -51,6 +52,7 @@ nav ul li {
 
 .inscription a {
   color: #0065fc;
+  font-weight: bold;
 }
 #hebergements a {
   color: #0065fc;
@@ -58,25 +60,29 @@ nav ul li {
   padding-top: 2em;
   width: 13em;
   padding-left: 3.5em;
+  font-weight: bold;
 }
 
 /* LOGO */
 .logo {
-  margin-left: 1%;
+  position: absolute;
+  top: 29px;
+  left: 35px;
+  width: 7%;
 }
 /* titres */
 .titres {
   display: flex;
   flex-direction: column;
+  margin-bottom: 1%;
 }
-
 .titre-1 {
   font-size: 21px;
   margin-top: 50px;
 }
 .titre-2 {
-  font-size: 15px;
-  margin-top: 1em;
+  font-size: 19px;
+  margin-top: 0em;
 }
 .titre-3 {
   margin: 24px 50px;
@@ -88,37 +94,42 @@ nav ul li {
 /* bouton search */
 form {
   display: flex;
+  width: 100em;
 }
 .map-marker {
-  width: 4%;
-  height: 3em;
+  width: 7%;
+  height: 4em;
   border-radius: 10px 0 0 10px;
   background-color: #f2f2f2;
 }
 #map-marker {
   display: flex;
   justify-content: center;
-  padding-top: 15px;
+  padding-top: 19px;
+  font-size: x-large;
 }
 .champ-city {
-  width: auto;
+  width: 18%;
   font-weight: bold;
   padding-left: 1%;
   border: 2px solid #f2f2f2f2;
+  font-size: larger;
 }
 #loupe {
   display: none;
 }
 .champ-search {
-  width: 7em;
+  width: 10em;
   background-color: #0065fc;
   color: white;
-  border-radius: 0 10px 10px 0;
+  border-radius: 0 22px 22px 0;
   border: 2px solid #0a65ec;
+  font-size: x-large;
 }
 /*-------------filtres-------------------*/
 #filtres {
   display: flex;
+  margin: 1% 0;
 }
 #filtres h5 {
   display: flex;
@@ -127,20 +138,16 @@ form {
 }
 .f {
   display: flex;
-
   align-items: center;
-
-  height: 40px;
-  border-radius: 20px 20px 20px 20px;
-  margin-left: 25px;
+  height: 53px;
+  border-radius: 20px;
+  margin-left: 39px;
   margin-top: 15px;
-
-  border: 2px solid #f2f2f2;
+  border: 2px solid rgb(242, 242, 242);
 }
 .f a {
   padding: 22px;
-  opacity: 1;
-  cursor: pointer;
+  font-size: x-large;
 }
 
 .survol:hover {
@@ -157,13 +164,13 @@ form {
   display: flex;
   justify-content: center;
   color: #0065fc;
-  font-size: x-small;
-  width: 29px;
+  font-size: small;
+  width: 34px;
   background-color: #deebff;
   border-radius: 14px;
   padding: 5px;
   transform: scale(1.3, 1.8);
-  height: 20px;
+  height: 29px;
   display: flex;
   align-items: center;
 }
@@ -192,6 +199,7 @@ form {
   padding: 7px;
   display: flex;
   justify-content: center;
+  font-size: medium;
 }
 
 /* hotels + HEBERGEMENTS */
@@ -229,7 +237,7 @@ form {
   background-color: #fff;
   border-radius: 20px;
   padding: 5px;
-  box-shadow: 2px 10px 25px 0px #b9b4b4;
+  box-shadow: 2px 10px 25px 0px #f0e9e9;
 }
 .afficher-plus {
   margin-left: 50px;
@@ -285,13 +293,13 @@ form {
   border-radius: 20px;
   height: 140px;
   padding: 5px;
-  box-shadow: 2px 10px 25px 0px #b9b4b4;
+  box-shadow: 2px 10px 25px 0px #f0e9e9;
 }
 .description-hotel {
   padding: 11px;
 }
 .description-hotel h5 {
-  font-size: 17px;
+  font-size: 15px;
   margin: 0;
 }
 .description-hotel p {
@@ -321,7 +329,7 @@ form {
   margin-right: 14%;
   padding-bottom: 4%;
   border-radius: 22px;
-  box-shadow: 2px 10px 25px 0px #b9b4b4;
+  box-shadow: 2px 10px 25px 0px #f0e9e9;
 }
 .vieux-port img {
   height: 34.5em;
@@ -337,7 +345,7 @@ form {
   margin-right: 14%;
   padding-bottom: 4%;
   border-radius: 22px;
-  box-shadow: 2px 10px 25px 0px #b9b4b4;
+  box-shadow: 2px 10px 25px 0px #f0e9e9;
 }
 .fort-pom img {
   height: 15em;
@@ -354,7 +362,7 @@ form {
   margin-top: 7%;
   padding-bottom: 4%;
   border-radius: 22px;
-  box-shadow: 2px 10px 25px 0px #b9b4b4;
+  box-shadow: 2px 10px 25px 0px #f0e9e9;
 }
 .frioul img {
   height: 14em;
@@ -370,7 +378,7 @@ form {
   margin-right: 14%;
   padding-bottom: 4%;
   border-radius: 22px;
-  box-shadow: 2px 10px 25px 0px #b9b4b4;
+  box-shadow: 2px 10px 25px 0px #f0e9e9;
 }
 .calanques img {
   height: 34.5em;
@@ -387,7 +395,7 @@ form {
   margin-top: 7%;
   padding-bottom: 4%;
   border-radius: 22px;
-  box-shadow: 2px 10px 25px 0px #b9b4b4;
+  box-shadow: 2px 10px 25px 0px #f0e9e9;
 }
 .longchamp img {
   height: 15em;
@@ -403,7 +411,7 @@ form {
   margin-right: 14%;
   padding-bottom: 4%;
   border-radius: 22px;
-  box-shadow: 2px 10px 25px 0px #b9b4b4;
+  box-shadow: 2px 10px 25px 0px #f0e9e9;
 }
 .la-garde img {
   height: 14em;
@@ -443,32 +451,38 @@ form {
 }
 
 .heberger {
-  margin-left: 25%;
+  margin-left: 22%;
 }
 .assistance {
   margin-left: 22%;
 }
 /*      MEDIA QUERIES                             */
-@media screen and (max-width:280px){
+/*@media screen and (max-width: 280px) {
   .description-hotel h5 {
     font-size: 13px;
     margin: 0;
-}
-.description-hotel p {
-  font-size: x-small;
-}
-}
+  }
+  .description-hotel p {
+    font-size: x-small;
+  }
+}*/
 @media screen and (max-width: 764px) {
   main {
     margin: 0;
   }
 
- 
-
   /* HEADER   -------------------------------------------------------*/
   header {
     width: 100%;
   }
+  /*--------logo------------*/
+  .logo {
+    position: absolute;
+    top: 10px;
+    left: 16px;
+    width: 28%;
+  }
+  /*----------navigation----------*/
   nav {
     width: 100%;
   }
@@ -493,7 +507,7 @@ form {
     color: #0065fc;
     border-bottom: 2px solid #0065f2;
     border-top: none;
-    padding: 0.5em 5em 0.5em 8em;
+    padding: 0.5em 2em 0.5em 8em;
     display: flex;
     justify-content: flex-end;
     width: 100%;
@@ -513,7 +527,7 @@ form {
     padding: 5% 0% 5% 26%;
   }
   .position-responsive {
-    margin-top: 5%;
+    margin-top: 18%;
     width: 50%;
   }
   /* titres -------------------------------------*/
@@ -534,24 +548,25 @@ form {
   }
 
   /* search ------------------------------------------*/
-  .map-marker {
-    width: 4%;
-    height: 3em;
-    border-radius: 10px 0 0 10px;
-    background-color: #f2f2f2;
+  #map-marker {
+    display: flex;
+    justify-content: center;
+    padding-top: 16px;
+    font-size: medium;
   }
   .champ-city {
-    width: 64%;
+    width: 61%;
     font-weight: bold;
     padding-left: 1%;
     border: 2px solid #f2f2f2f2;
+    font-size: small;
   }
 
   .map-marker {
     height: 3em;
     border-radius: 10px 0 0 10px;
     background-color: #f2f2f2;
-    min-width: 17%;
+    min-width: 21%;
   }
   .champ-search {
     display: none;
@@ -559,12 +574,13 @@ form {
   form {
     display: flex;
     margin: 8px;
-  }
+    width: 19em;
+}
   #loupe {
     display: flex;
     align-items: center;
     background-color: #0065fc;
-    width: 17%;
+    width: 25%;
     border-radius: 0 9px 9px 0;
     justify-content: center;
     color: white;
@@ -579,7 +595,7 @@ form {
   .align-responsive {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -0.5em;
+    margin-left: -1.5em;
   }
   .survol:hover {
     display: flex;
@@ -592,10 +608,47 @@ form {
   .survol:hover {
     display: flex;
     align-items: center;
-    height: 40px;
+    height: 52px;
     border-radius: 0px 20px 20px 20px;
     background-color: #0065fc;
     color: white;
+    width: 82%;
+}
+  .f a {
+    padding: 7px;
+    font-size: medium;
+  }
+  .f {
+    display: flex;
+    align-items: center;
+    height: 53px;
+    border-radius: 20px;
+    margin-left: 39px;
+    margin-top: 15px;
+    border: 2px solid rgb(242, 242, 242);
+    width: auto;
+  }
+  .icone i {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    color: #0065fc;
+    font-size: small;
+    width: 32px;
+    background-color: #deebff;
+    border-radius: 14px;
+    margin: 4px;
+    transform: scale(1.3, 1.8);
+    height: 29px;
+    display: flex;
+    align-items: center;
+  }
+  #animaux {
+    white-space: nowrap;
+    width: 57%;
+}
+  #familial {
+    margin-left: 4%;
   }
   /* INFO -------------------------------------*/
   .info {
@@ -644,7 +697,7 @@ form {
     background-color: #fff;
     border-radius: 20px;
     padding: 5px;
-    box-shadow: 2px 10px 25px 0px #b9b4b4;
+    box-shadow: 2px 10px 25px 0px #f0e9e9;
     margin: 5% 2% 5% 5%;
   }
 
@@ -660,7 +713,7 @@ form {
   }
   /* populaires-----------------------------------------------------*/
   .align i {
-    padding-top: 5%;
+    padding-top: 8%;
   }
   .section-B {
     background-color: #f2f2f2;
@@ -668,7 +721,7 @@ form {
     flex-direction: column;
     border-radius: 0px;
     width: auto;
-    box-shadow: 2px 10px 25px 0px #f2f2f2;
+    box-shadow: 2px 10px 25px 0px #f0e9e9;
   }
   .section-B a {
     display: flex;
@@ -690,6 +743,9 @@ form {
     height: 34em;
   }
   /* activités -------------------------------------------------------*/
+  .titre-4 {
+    margin-left: 7%;
+  }
   #images-activites {
     display: flex;
     justify-content: space-evenly;
@@ -728,7 +784,7 @@ form {
   .vieux-port {
     background-color: rgb(248, 246, 246);
     border-radius: 20px;
-    box-shadow: 2px 6px 15px -2px #7c7a7a;
+    box-shadow: 2px 6px 15px -2px #f0e9e9;
     margin: 1% 4% 10% 5%;
     width: 92%;
   }
@@ -754,7 +810,8 @@ form {
     display: flex;
     flex-direction: column;
     background-color: #f2f2f2;
-    margin: 0;
+    padding-bottom: 28px;
+    margin-bottom: 0;
   }
   .footer-1 a {
     display: flex;
@@ -778,23 +835,81 @@ form {
   }
 }
 @media screen and (min-width: 765px) and (max-width: 991px) {
+  /*---------HEADER----------*/
+  /*----------logo-----------*/
+  .logo {
+    position: absolute;
+    top: 29px;
+    left: 34px;
+    width: 15%;
+  }
   /*--------------NAVIGAYION---------------*/
   nav {
     display: flex;
-    width: 65%;
+    width: 70%;
   }
-
+  .inscription a {
+    color: #0065fc;
+    font-weight: bold;
+    margin-right: auto;
+  }
+  /*---------RECHERCHER---------*/
+  form {
+    display: flex;
+    width: 45em;
+    height: 50px;
+  }
+  .champ-search {
+    width: 7em;
+    background-color: #0065fc;
+    color: white;
+    border-radius: 0 22px 22px 0;
+    border: 2px solid #0a65ec;
+    font-size: x-large;
+  }
   /*-----------------FILTRES--------*/
+  .f {
+    display: flex;
+    align-items: center;
+    height: 53px;
+    border-radius: 20px;
+    margin-left: 17px;
+    margin-top: 15px;
+    border: 2px solid rgb(242, 242, 242);
+  }
   .f a {
     padding: 17px;
+    font-size: 17px;
   }
   .survol:hover {
     display: flex;
     align-items: center;
-    height: 40px;
+    height: 51px;
     border-radius: 0px 20px 20px 20px;
     background-color: #0065fc;
     color: white;
+  }
+  .champ-city {
+    width: 28%;
+    font-weight: bold;
+    padding-left: 1%;
+    border: 2px solid #f2f2f2f2;
+    font-size: larger;
+  }
+  .map-marker {
+    width: 7%;
+    height: 3.1em;
+    border-radius: 10px 0 0 10px;
+    background-color: #f2f2f2;
+  }
+  #map-marker {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    font-size: larger;
+  }
+  #animaux{
+    width: min-content;
   }
   /*------------point-info----------------*/
   #point-info {
@@ -849,8 +964,11 @@ form {
     margin-top: -25px;
   }
   .description-hotel h5 {
-    font-size: 14px;
+    font-size: 11px;
     margin: 0;
+  }
+  .description-hotel p {
+    font-size: 12px;
   }
   .lespluspopulaires {
     margin: 3% 0 3% 16%;
@@ -859,7 +977,7 @@ form {
     padding: 9%;
   }
   .image-7 p {
-    font-size: 75%;
+    font-size: 73%;
   }
   .image-9 p {
     font-size: 75%;
@@ -907,21 +1025,46 @@ form {
     margin-left: 17%;
   }
   .a-propos {
-    margin: 0 -30px;
-}
+    margin: 0px 1px;
+  }
   .all-footer {
     display: flex;
     justify-content: space-around;
-    margin: 0;
+    margin: 6% 0 0 0;
     background-color: #f2f2f2;
-    
   }
 }
 @media screen and (min-width: 992px) {
+  /*---------LOGO---------*/
+  .logo {
+    position: absolute;
+    top: 29px;
+    left: 28px;
+    width: 12%;
+  }
   /*----------navigation----------*/
   nav {
     display: flex;
-    width: 51%;
+    width: 53%;
+    margin-right: 20px;
+  }
+  /*-----------rechercher---------*/
+  form {
+    display: flex;
+    width: 62em;
+    height: 3em;
+}
+  .map-marker {
+    width: 7%;
+    height: 3em;
+    border-radius: 10px 0 0 10px;
+    background-color: #f2f2f2;
+  }
+  #map-marker {
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+    font-size: x-large;
   }
   /*-----------filtres-----------*/
   .survol:hover {
@@ -931,6 +1074,18 @@ form {
     border-radius: 0px 20px 20px 20px;
     background-color: #0065fc;
     color: white;
+  }
+  .f a {
+    padding: 22px;
+    font-size: large;
+  }
+  #filtres h5 {
+    display: flex;
+    align-items: center;
+    font-size: larger;
+  }
+  #animaux{
+    width: min-content;
   }
   /*------------point-info------*/
   #point-info {
@@ -942,6 +1097,7 @@ form {
   .six-images {
     display: flex;
     flex-wrap: wrap;
+    margin-left: 0em;
   }
   .six-images a {
     background-color: #fff;
@@ -949,11 +1105,11 @@ form {
     padding: 5px;
     display: flex;
     flex-direction: column;
-    height: 17em;
+    height: 15em;
     width: 39%;
   }
   .six-images img {
-    height: 11em;
+    height: 10em;
     border-radius: 22px 22px 0 0;
     object-fit: cover;
   }
@@ -971,7 +1127,7 @@ form {
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    height: 17em;
+    height: 16.5em;
   }
   .trois-images img {
     width: 100%;
@@ -1024,10 +1180,11 @@ form {
   .all-footer {
     display: flex;
     background-color: #f2f2f2;
+    padding: 4% 0 4% 0;
     margin: 4% 0 0 0;
-  }
+}
   .a-propos {
-    margin-left: 1%;
+    margin-left: 3%;
   }
   .footer-1 a {
     display: flex;
@@ -1046,6 +1203,24 @@ form {
       font-size: 21px;
       margin-top: 32px;
     }
+    /*--------search-----*/
+    form {
+      display: flex;
+      width: 77em;
+      height: 3em;
+    }
+    .map-marker {
+      width: 7%;
+      height: 3em;
+      border-radius: 10px 0 0 10px;
+      background-color: #f2f2f2;
+    }
+    #map-marker {
+      display: flex;
+      justify-content: center;
+      padding-top: 13px;
+      font-size: x-large;
+    }
     /*------------POINT-INFO----------*/
     #point-info {
       display: flex;
@@ -1057,10 +1232,32 @@ form {
     .survol:hover {
       display: flex;
       align-items: center;
-      height: 40px;
+      height: 51px;
       border-radius: 0px 20px 20px 20px;
       background-color: #0065fc;
       color: white;
+    }
+    .icone i {
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      color: #0065fc;
+      font-size: small;
+      width: 34px;
+      background-color: #deebff;
+      border-radius: 14px;
+      padding: 5px;
+      transform: scale(1.3, 1.8);
+      height: 29px;
+    }
+    #filtres h5 {
+      display: flex;
+      align-items: center;
+      font-size: larger;
+    }
+    .f a {
+      padding: 22px;
+      font-size: large;
     }
     /*--------hebergements------------*/
     .six-images a {
@@ -1069,19 +1266,27 @@ form {
       padding: 5px;
       display: flex;
       flex-direction: column;
-      height: 17em;
+      height: 12em;
       width: 26%;
+    }
+    .six-images img {
+      height: 7em;
+      border-radius: 22px 22px 0 0;
+      object-fit: cover;
     }
     /*------------populaire----------*/
     .align i {
       padding-top: 8%;
+      font-size: larger;
     }
     .section-B a {
       background-color: white;
       border-radius: 20px;
       display: flex;
       flex-direction: row;
-      height: 13em;
+      height: 8.3em;
+      width: 82%;
+      margin-left: 9%;
     }
     .trois-images img {
       width: 43%;
@@ -1091,13 +1296,13 @@ form {
     }
     .etoile-2 {
       font-size: small;
-      margin-top: 6em;
+      margin-top: -1em;
     }
     .trois-images {
       display: flex;
       flex-direction: column;
       width: 100%;
-      height: 47em;
+      height: 32em;
     }
     /*------------activites----------*/
     .frioul img {
@@ -1106,7 +1311,7 @@ form {
       width: 100%;
     }
     .longchamp img {
-      height: 15.5em;
+      height: 15.6em;
       object-fit: cover;
       width: 100%;
     }
@@ -1121,12 +1326,12 @@ form {
       width: 100%;
     }
     .calanques img {
-      height: 34.3em;
+      height: 34.5em;
       object-fit: cover;
       width: 100%;
-  }
+    }
     .afficher-plus {
-      margin: 2% 0 3% 7%;
+      margin: -2% 0 3% 7%;
       font-weight: bold;
       font-size: larger;
     }
@@ -1135,12 +1340,24 @@ form {
       margin: 4% 0 0 0%;
       display: flex;
       background-color: #f2f2f2;
+      padding-bottom: 3%;
+      padding-top: 3%;
     }
     .a-propos {
-      margin-left: 1%;
+      margin-left: 3%;
     }
   }
   @media screen and (min-width: 1440px) {
+    /*---------NAVIGATION------*/
+    nav {
+      display: flex;
+      width: 39%;
+      margin-right: 31px;
+      font-size: large;
+      justify-content: start;
+  }
+    /*----------FILTRES------------*/
+
     /*------------activites----------*/
     .longchamp img {
       height: 15em;
@@ -1156,26 +1373,34 @@ form {
       height: 17.3em;
       object-fit: cover;
       width: 100%;
-  }
-  .calanques img {
-    height: 34.6em;
-    object-fit: cover;
-    width: 100%;
-}
-.la-garde img {
-  height: 13.4em;
-  object-fit: cover;
-  width: 100%;
-}
+    }
+    .calanques img {
+      height: 34.6em;
+      object-fit: cover;
+      width: 100%;
+    }
+    .la-garde img {
+      height: 13.4em;
+      object-fit: cover;
+      width: 100%;
+    }
   }
   @media screen and (min-width: 1920px) {
+    /*-----------LOGO-------------*/
+    .logo {
+      position: absolute;
+      top: 29px;
+      left: 55px;
+      width: 7%;
+    }
     /*-----------NAVIGATION---------*/
     #activites a {
       padding-left: 20%;
     }
     .titre-1 {
-      font-size: 21px;
+      font-size: 28px;
       margin-top: 32px;
+      font-weight: bold;
     }
     /*----------point-info-----------*/
     #point-info {
@@ -1183,22 +1408,22 @@ form {
       margin-bottom: auto;
       margin-left: 0%;
       width: 80%;
+      font-size: 1.4em;
     }
     /*--------filtres-------*/
     .f {
       display: flex;
       align-items: center;
-      height: 54px;
+      height: 66px;
       border-radius: 20px 20px 20px 20px;
-      margin-left: 87px;
+      margin-left: 70px;
       margin-top: 15px;
-      border: 2px solid #f2f2f2;
-      width: 15em;
+      border: 2px solid #e6e3e3;
     }
     .survol:hover {
       display: flex;
       align-items: center;
-      height: 51px;
+      height: 66px;
       border-radius: 0px 20px 20px 20px;
       background-color: #0065fc;
       color: white;
@@ -1209,24 +1434,22 @@ form {
       display: flex;
       justify-content: center;
       color: #0065fc;
-      font-size: x-small;
-      width: 39px;
+      font-size: large;
+      width: 50px;
       background-color: #deebff;
-      border-radius: 14px;
+      border-radius: 67px;
       padding: 5px;
-      transform: scale(1.3, 1.8);
-      height: 28px;
-      display: flex;
+      transform: scale(1.5);
+      height: 45px;
       align-items: center;
     }
     #filtres {
       display: flex;
-      margin-top: 1%;
+      margin-top: 1.5em;
     }
     #filtres h5 {
-      font-size: 18px;
-      margin: 2% 1% 1% 0%;
-      padding: 0% 0% 1% 0%;
+      font-size: 24px;
+      margin-top: 1.2em;
     }
     /*-------------hebergements + Populaires------*/
     #hotels {
@@ -1240,11 +1463,16 @@ form {
       padding: 5px;
       display: flex;
       flex-direction: column;
-      height: 17em;
+      height: 14.2em;
       width: 28%;
     }
+    .six-images img {
+      height: 9em;
+      border-radius: 22px 22px 0 0;
+      object-fit: cover;
+    }
     a.afficher-plus {
-      margin: 2% 0 3% 4%;
+      margin: 0% 0 3% 4%;
       font-weight: bold;
       font-size: larger;
     }
@@ -1280,14 +1508,15 @@ form {
     }
     .etoile-2 {
       font-size: small;
-      margin-top: 3em;
+      margin-top: 2em;
     }
     .section-B a {
       background-color: white;
       border-radius: 20px;
       display: flex;
       flex-direction: row;
-      height: 12em;
+      height: 10.5em;
+      width: 88%;
     }
     .section-B p {
       padding-top: 5%;
@@ -1302,7 +1531,7 @@ form {
       display: flex;
       flex-direction: column;
       width: 95%;
-      height: 47em;
+      height: 42em;
       justify-content: center;
     }
     .image-9 a {
@@ -1340,19 +1569,27 @@ form {
       height: 12em;
       object-fit: cover;
       width: 100%;
-  }
+    }
     .section-C {
       margin: 1px -32px 1px 1px;
     }
 
     /*---------------footer-------------*/
     .all-footer {
-      margin: 4% 0 0 0%;
+      margin: 6% 0 0 0;
       display: flex;
       background-color: #f2f2f2;
+      padding-bottom: 74px;
+    }
+    .a-propos,
+    .heberger,
+    .assistance {
+      font-size: larger;
+      display: flex;
+      flex-direction: column;
     }
     .a-propos {
-      margin-left: 1%;
+      margin-left: 2%;
     }
   }
 }
